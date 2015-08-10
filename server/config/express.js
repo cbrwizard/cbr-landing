@@ -11,7 +11,7 @@ var methodOverride = require('method-override');
 var httpProxy = require('http-proxy');
 var proxy = httpProxy.createProxyServer();
 
-module.exports = function (app, passport) {
+module.exports = function (app) {
   app.set('port', (process.env.PORT || 3000));
 
   // X-Powered-By header has no functional value.
@@ -79,9 +79,6 @@ module.exports = function (app, passport) {
   }
 
   app.use(session(sessionOptions));
-
-  app.use(passport.initialize());
-  app.use(passport.session());
 
   app.use(flash());
 

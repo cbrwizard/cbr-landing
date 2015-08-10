@@ -9,15 +9,16 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 ## Full list
 - *Express app
 - *Automatically compiles all js, css, html files and reloads browser when needed
-- *Stylus, Jade
-- *MongoDB
-- *React with JSX and server rendering
+- *Stylus (css modules? PostCSS?), Jade
+- *MongoDB, Mongoose
+- *React with JSX, React Router, React Helmet
+- *Server rendering
 - *Single page app
 - *Reflux
 - *Unit and acceptance tests
 - *Automatic specs run
 - *Heroku easy hosting
-- *Landing page with BEM sample styling with Material Design
+- *Landing page with BEM(BEMIT?) sample styling with Material Design
 - *Subscription form with error handling
 - *Admin page with credentials taken from config
 - *Subscriptions edit and delete
@@ -28,7 +29,9 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 Items with * = work in progress.
 
 ## Current small TODO:
-- Convert to JADE
-- Remove google passport and probably passport all together
-- Convert Mongoose functions to Promises
+- Webpack with just --watch
  
+## How to dev
+0. $ npm install
+1. $ mongod
+
