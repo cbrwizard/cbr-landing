@@ -1,1 +1,0 @@
-const lal = 5;

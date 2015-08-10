@@ -26,3 +26,9 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - *Massive emails send as a background process
 
 Items with * = work in progress.
+
+## Current small TODO:
+- Convert to JADE
+- Remove google passport and probably passport all together
+- Convert Mongoose functions to Promises
+ 

@@ -5,5 +5,7 @@
 /.idea
 
 /node_modules
-
 /private
+/public
+
+/server/config/secrets.js
