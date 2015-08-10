@@ -25,11 +25,9 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - *Emails CRUD
 - *Emails Markdown Editor
 - *Massive emails send as a background process
+- *Livereload
 
 Items with * = work in progress.
-
-## Current small TODO:
-- Webpack with just --watch
  
 ## How to dev
 0. $ npm install
