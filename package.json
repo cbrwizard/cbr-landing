@@ -1,6 +1,6 @@
 {
   "name": "cbr-landing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development nodemon --debug ./server/app.js  --ignore client/",

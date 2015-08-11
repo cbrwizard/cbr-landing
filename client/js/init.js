@@ -1,14 +1,11 @@
-// Start entry for app
+/**
+ * Client start point
+ */
 
-import Person from './person'
-
-let person = new Person('niu');
-person.sayHi();
-
-import React from "react";
-import Greeting from "./greeting";
+import React from 'react';
+import Greeting from "./components/pages/index/greeting";
 
 React.render(
-  <Greeting name={person.name}/>,
-  document.body
+  <Greeting name={'you'}/>,
+  document.querySelector('.content')
 );

@@ -25,7 +25,7 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - *Emails CRUD
 - *Emails Markdown Editor
 - *Massive emails send as a background process
-- *Livereload
+- *Eslint
 
 Items with * = work in progress.
  
