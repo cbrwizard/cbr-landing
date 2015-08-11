@@ -7,7 +7,7 @@ var path = require('path');
 var express = require('express');
 
 module.exports = function (app) {
-  app.set('views', path.join(__dirname, '../../client/views'));
+  app.set('views', path.join(__dirname, '../../shared/views'));
   app.set('view engine', 'jade');
 
   app.set('port', process.env.PORT || 3000);
