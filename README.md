@@ -7,13 +7,13 @@ A simple website template for quick experimental projects. Contains one page for
 Completely written in latest Javascript. Backend is Express with MongoDB. Frontend is React.js, Reflux, Webpack. It has tests. Whole development process is automatic.
 
 ## Full list
-- Express app
+- Express single page app
 - *Automatically compiles all js, css, html files and reloads browser when needed
-- *Stylus (css modules? PostCSS?), Jade
+- PostCSS with CSSNext
+- Jade
 - *MongoDB, Mongoose
 - *React with JSX, React Router, React Helmet
 - *Server rendering
-- *Single page app
 - *Reflux
 - *Unit and acceptance tests
 - *Automatic specs run
@@ -25,11 +25,12 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - *Emails CRUD
 - *Emails Markdown Editor
 - *Massive emails send as a background process
-- *Eslint
+- *Eslint, BEMLint
 
 Items with * = work in progress.
  
 ## How to dev
 0. $ npm install
-1. $ mongod
-
+1. $ npm run webpack
+2. $ mongod
+3. $ npm run dev

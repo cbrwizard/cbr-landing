@@ -1,5 +1,12 @@
 @import './../../../styles/structure.css';
 
+:root {
+  --mainColor: rebeccapurple;
+}
+
 .greeting {
-  background: #000;
+  background: var(--mainColor);
+  span { padding : 5 px;
+  display: flex;
+}
 }
