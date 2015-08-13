@@ -3,5 +3,5 @@
  * @module Express router index function
  */
 exports.index = function (req, res, next) {
-  res.render('pages/index', {title: 'Express'});
+  res.render('pages/blank');
 };

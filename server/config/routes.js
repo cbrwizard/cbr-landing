@@ -10,4 +10,3 @@ var pagesController = require('./../controllers/pages');
 module.exports = function (app) {
   app.get('/', pagesController.index);
 };
-

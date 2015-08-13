@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import Greeting from "./../components/pages/index/greeting";
+import Router from 'react-router';
+import routes from './routes';
 
-React.render(
-  <Greeting name={'you'}/>,
-  document.querySelector('.content')
-);
+Router.run(routes, function (Handler) {
+  React.render(<Handler/>, document.querySelector('.content'));
+});

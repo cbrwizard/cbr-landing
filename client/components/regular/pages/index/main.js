@@ -2,7 +2,7 @@ import './greeting.css';
 
 import React from "react";
 
-class Greeting extends React.Component {
+class Main extends React.Component {
   render() {
     return (
       <div className="greeting">
@@ -12,7 +12,7 @@ class Greeting extends React.Component {
   }
 }
 
-Greeting.propTypes = {name: React.PropTypes.string};
-Greeting.defaultProps = {name: 'somebody'};
+Main.propTypes = {name: React.PropTypes.string};
+Main.defaultProps = {name: 'somebody'};
 
-module.exports = Greeting;
+module.exports = Main;
