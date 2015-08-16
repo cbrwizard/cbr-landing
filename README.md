@@ -10,9 +10,10 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - Express single page app
 - *Automatically compiles all js, css, html files and reloads browser when needed
 - PostCSS with CSSNext
-- Jade
+- JadeRe
 - *MongoDB, Mongoose
-- *React with JSX, React Router, React Helmet
+- React with JSX, React Router, React Helmet
+- *i18n
 - *Server rendering
 - *Reflux
 - *Unit and acceptance tests

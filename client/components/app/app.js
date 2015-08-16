@@ -1,5 +1,6 @@
 import Router from 'react-router';
 import React from "react";
+import Helmet from "react-helmet";
 import routes from './../../js/routes';
 
 const Link = Router.Link;
@@ -20,6 +21,13 @@ class App extends React.Component {
           </ul>
         </header>
 
+        <Helmet
+          title='Hello'
+          titleTemplate='%s | Project'
+          meta={[
+            {'name': 'description', 'content': 'Super interesting project page'}
+          ]}
+          />
         <RouteHandler/>
       </div>
     );

@@ -1,12 +1,17 @@
-import './greeting.css';
-
+import Helmet from "react-helmet";
 import React from "react";
+
+import './greeting.css';
 
 class Main extends React.Component {
   render() {
     return (
       <div className="greeting">
         Hello, {this.props.name}!
+
+        <Helmet
+          title='Home'
+          />
       </div>
     );
   }
