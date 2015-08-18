@@ -13,7 +13,7 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - JadeRe
 - *MongoDB, Mongoose
 - React with JSX, React Router, React Helmet
-- *i18n
+- *FormatJS
 - *Server rendering
 - *Reflux
 - *Unit and acceptance tests

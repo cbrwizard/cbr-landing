@@ -1,14 +1,19 @@
 import Router from 'react-router';
 import React from "react";
 import Helmet from "react-helmet";
+import ReactIntl from 'react-intl';
+import reactMixin from 'react-mixin';
 import routes from './../../js/routes';
 
+const IntlMixin = ReactIntl.IntlMixin;
 const Link = Router.Link;
 const RouteHandler = Router.RouteHandler;
+const FormattedMessage = ReactIntl.FormattedMessage;
 
 /**
  * @TODO: probably we need to create a separate app for admin and regular too
  */
+@reactMixin.decorate(IntlMixin)
 class App extends React.Component {
   render() {
     return (
@@ -20,6 +25,11 @@ class App extends React.Component {
             <li><Link to="admin">Admin</Link></li>
           </ul>
         </header>
+        <FormattedMessage
+          message={this.getIntlMessage('photos')}
+          name="Annie"
+          numPhotos={1000}
+          takenDate={Date.now()}/>
 
         <Helmet
           title='Hello'
