@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var WebpackNotifierPlugin = require('webpack-notifier');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var postCSSImport = require('postcss-import');
 var postCSSNested = require('postcss-nested');
@@ -48,6 +49,7 @@ module.exports = {
     browsers: "last 2 versions"
   },
   plugins: [
+    new WebpackNotifierPlugin(),
     new ExtractTextPlugin('../stylesheets/[name].css')
   ]
 };
