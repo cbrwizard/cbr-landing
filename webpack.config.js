@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var postCSSImport = require('postcss-import');
 var postCSSNested = require('postcss-nested');
@@ -30,6 +31,9 @@ module.exports = {
     ]
   },
   resolve: {
+    root: [
+      path.join(__dirname, 'client')
+    ],
     extensions: ["", ".js", ".jsx"]
   },
   watch: true,

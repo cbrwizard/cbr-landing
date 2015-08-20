@@ -1,10 +1,8 @@
-/**
- * Gets a user locale language
- *
- * @returns {string}
- */
-function getUserLanguage() {
-  return navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-}
+import currentLocaleFunction from 'current_locale';
 
-export default getUserLanguage();
+const currentLocale = currentLocaleFunction({
+  supportedLocales: ['ru', 'en-US'],
+  fallbackLocale: 'en-US'
+});
+
+export default currentLocale;
