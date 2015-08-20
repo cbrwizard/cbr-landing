@@ -1,4 +1,4 @@
-import currentLocaleFunction from 'current_locale';
+import currentLocaleFunction from 'current-locale';
 
 const currentLocale = currentLocaleFunction({
   supportedLocales: ['ru', 'en-US'],
