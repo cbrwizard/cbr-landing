@@ -4,6 +4,30 @@
     "react"
   ],
   "rules": {
+    "func-names": 0,
+    "no-trailing-spaces": [
+      2,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "spaced-comment": [
+      1,
+      "always",
+      {
+        // http://eslint.org/docs/rules/spaced-comment
+        "exceptions": [
+          "-",
+          "+"
+        ],
+        "markers": [
+          "=",
+          "!"
+        ]
+        // space here to support sprockets directives
+      }
+    ],
+
     "react/display-name": 0,
     "react/jsx-boolean-value": 2,
     "react/jsx-no-undef": 2,

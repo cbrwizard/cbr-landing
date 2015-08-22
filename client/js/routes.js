@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from 'react-router';
-import App from './../components/app/app';
+import App from './../components/app/main';
 import Index from './../components/regular/pages/index/main';
 import Admin from './../components/admin/pages/index/main';
 

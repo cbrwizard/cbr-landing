@@ -10,23 +10,23 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - Express io.js single page app
 - *Automatically compiles all js, css, html files and reloads browser when needed
 - PostCSS with CSSNext
-- JadeRe
+- Eslint
+- Jade
 - *MongoDB, Mongoose
 - React with JSX, React Router, React Helmet
-- *FormatJS
+- FormatJS
 - *Server rendering
 - *Reflux
 - *Unit and acceptance tests
 - *Automatic specs run
 - *Heroku easy hosting
-- *Landing page with BEM(BEMIT?) sample styling with Material Design
+- *Landing page with BEM sample styling with Material Design
 - *Subscription form with error handling
 - *Admin page with credentials taken from config
 - *Subscriptions edit and delete
 - *Emails CRUD
 - *Emails Markdown Editor
 - *Massive emails send as a background process
-- *Eslint, BEMLint
 
 Items with * = work in progress.
  
