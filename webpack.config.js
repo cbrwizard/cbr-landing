@@ -40,8 +40,10 @@ module.exports = {
   resolve: {
     root: [
       path.join(__dirname, 'client'),
+      path.join(__dirname, 'components'),
+      path.join(__dirname, 'config'),
     ],
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx', '.css'],
   },
   watch: true,
   devtool: '#inline-source-map',

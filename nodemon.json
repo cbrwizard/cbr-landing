@@ -2,9 +2,8 @@
   "restartable": "rs",
   "ignore": [
     ".git",
-    "node_modules/**/node_modules",
-    "client",
-    "public"
+    "public",
+    ".idea"
   ],
   "verbose": true,
   "execMap": {

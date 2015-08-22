@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet';
 import React from 'react';
 
-//import './greeting.css'; //TODO: find a way of importing them for isomorphic apps
+//import styles from './greeting.css'; //TODO: find a way of importing them for isomorphic apps
 
 class Main extends React.Component {
   render() {

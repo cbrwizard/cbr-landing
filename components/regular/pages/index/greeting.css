@@ -1,4 +1,4 @@
-@import './../../../../styles/structure.css';
+/*@import './../../../client/styles/structure';*/
 
 :root {
   --mainColor: rebeccapurple;
@@ -6,7 +6,7 @@
 
 .greeting {
   background: var(--mainColor);
-  span { padding : 5 px;
+  span { padding : 25 px;
   display: flex;
 }
 }
