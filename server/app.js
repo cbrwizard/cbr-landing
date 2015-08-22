@@ -3,13 +3,11 @@
  * @module Express app
  */
 
-var express = require('express');
-var path = require('path');
-var http = require('http');
-var expressConfig = require('./config/express');
-var routesConfig = require('./config/routes');
+const express = require('express');
+const expressConfig = require('./config/express');
+const routesConfig = require('./config/routes');
 
-var app = express();
+const app = express();
 
 expressConfig(app);
 routesConfig(app);

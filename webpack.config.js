@@ -1,55 +1,61 @@
-var webpack = require('webpack');
-var path = require('path');
-var WebpackNotifierPlugin = require('webpack-notifier');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var postCSSImport = require('postcss-import');
-var postCSSNested = require('postcss-nested');
-var autoprefixer = require('autoprefixer-core');
+const path = require('path');
+const WebpackNotifierPlugin = require('webpack-notifier');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const postCSSImport = require('postcss-import');
+const postCSSNested = require('postcss-nested');
+const autoprefixer = require('autoprefixer-core');
 
 module.exports = {
-  context: __dirname + "/client/js",
+  context: __dirname + '/client/js',
   entry: {
-    app: './init'
+    app: './init',
   },
   output: {
-    path: __dirname + "/public/javascripts",
-    filename: '[name].js'
+    path: __dirname + '/public/javascripts',
+    filename: '[name].js',
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+      },
+    ],
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
         query: {
-          stage: 1
-        }
+          stage: 1,
+        },
       },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!cssnext-loader')
-      }
-    ]
+      },
+    ],
   },
   resolve: {
     root: [
-      path.join(__dirname, 'client')
+      path.join(__dirname, 'client'),
     ],
-    extensions: ["", ".js", ".jsx"]
+    extensions: ['', '.js', '.jsx'],
   },
   watch: true,
-  devtool: "#inline-source-map",
+  devtool: '#inline-source-map',
 
   postcss: [
     postCSSImport(),
     postCSSNested(),
-    autoprefixer({browsers: ['last 2 versions']})
+    autoprefixer({browsers: ['last 2 versions']}),
   ],
   cssnext: {
-    browsers: "last 2 versions"
+    browsers: 'last 2 versions',
   },
   plugins: [
     new WebpackNotifierPlugin(),
-    new ExtractTextPlugin('../stylesheets/[name].css')
-  ]
+    new ExtractTextPlugin('../stylesheets/[name].css'),
+  ],
 };

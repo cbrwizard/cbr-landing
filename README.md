@@ -7,7 +7,7 @@ A simple website template for quick experimental projects. Contains one page for
 Completely written in latest Javascript. Backend is Express with MongoDB. Frontend is React.js, Reflux, Webpack. It has tests. Whole development process is automatic.
 
 ## Full list
-- Express single page app
+- Express io.js single page app
 - *Automatically compiles all js, css, html files and reloads browser when needed
 - PostCSS with CSSNext
 - JadeRe

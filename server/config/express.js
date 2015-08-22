@@ -3,8 +3,8 @@
  * @module Express configuration function
  */
 
-var path = require('path');
-var express = require('express');
+const path = require('path');
+const express = require('express');
 
 module.exports = function (app) {
   app.set('views', path.join(__dirname, '../../shared/views'));

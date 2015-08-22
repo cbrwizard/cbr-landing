@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from 'react-router';
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 
 const Link = Router.Link;
 

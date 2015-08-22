@@ -1,9 +1,8 @@
+import React from 'react';
 import Router from 'react-router';
-import React from "react";
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 import ReactIntl from 'react-intl';
 import reactMixin from 'react-mixin';
-import routes from './../../js/routes';
 
 const IntlMixin = ReactIntl.IntlMixin;
 const Link = Router.Link;
@@ -20,14 +19,14 @@ class App extends React.Component {
       <div>
         <header>
           <ul>
-            <li><Link to="app">App</Link></li>
-            <li><Link to="index">Index</Link></li>
-            <li><Link to="admin">Admin</Link></li>
+            <li><Link to='app'>App</Link></li>
+            <li><Link to='index'>Index</Link></li>
+            <li><Link to='admin'>Admin</Link></li>
           </ul>
         </header>
         <FormattedMessage
           message={this.getIntlMessage('photos')}
-          name="Annie"
+          name='Annie'
           numPhotos={1000}
           takenDate={Date.now()}/>
 
@@ -35,7 +34,7 @@ class App extends React.Component {
           title='Hello'
           titleTemplate='%s | Project'
           meta={[
-            {'name': 'description', 'content': 'Super interesting project page'}
+            {'name': 'description', 'content': 'Super interesting project page'},
           ]}
           />
         <RouteHandler/>
