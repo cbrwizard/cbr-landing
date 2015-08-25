@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon --debug",
     "start": "NODE_ENV=production nodemon",
-    "webpack": "webpack --progress --colors"
+    "webpack": "webpack --progress --colors",
+    "debug": "node-inspector"
   },
   "main": "server/app.js",
   "dependencies": {

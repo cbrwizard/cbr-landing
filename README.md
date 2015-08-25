@@ -8,18 +8,17 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 
 ## Full list
 - Express io.js single page app
-- *Automatically compiles all js, css, html files and reloads browser when needed
+- *React hot loader
 - PostCSS with CSSNext
 - Eslint
 - Jade
-- *MongoDB, Mongoose
 - React with JSX, React Router, React Helmet
 - FormatJS
-- *Server rendering
-- *Reflux
+- *Isomorphic app
+- *Flux(Alt)
+- *MongoDB, Mongoose
 - *Unit and acceptance tests
 - *Automatic specs run
-- *Heroku easy hosting
 - *Landing page with BEM sample styling with Material Design
 - *Subscription form with error handling
 - *Admin page with credentials taken from config
@@ -27,11 +26,18 @@ Completely written in latest Javascript. Backend is Express with MongoDB. Fronte
 - *Emails CRUD
 - *Emails Markdown Editor
 - *Massive emails send as a background process
+- *Production config
+- *Heroku easy hosting
 
 Items with * = work in progress.
+
+<!-- 
+  Current task: get react hot loader up and running.
+  Next task: properly do isomorphic app somehow. Example: https://github.com/kriasoft/react-starter-kit/tree/master
+ --> 
  
 ## How to dev
 0. $ npm install
 1. $ npm run webpack
-2. $ mongod
+2. $ npm run debug
 3. $ npm run dev
