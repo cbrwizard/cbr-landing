@@ -1,7 +1,10 @@
+require('babel/register')({
+  stage: 1,
+});
+
 var express = require('express');
 var fs = require('fs');
 var mongoose = require('mongoose');
-//var passport = require('passport');
 var secrets = require('./config/secrets');
 
 var app = express();

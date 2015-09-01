@@ -1,6 +1,6 @@
-/* 
+/*
  Modified from:
- http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup 
+ http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup
  */
 var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
@@ -14,7 +14,7 @@ module.exports = function () {
   var bundleStart = null;
   var compiler = webpack(webpackConfig);
 
-  // Give notice to the terminal when it starts bundling 
+  // Give notice to the terminal when it starts bundling
   // and set the time it started
   compiler.plugin('compile', function () {
     console.log('Bundling ...');

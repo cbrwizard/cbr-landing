@@ -1,0 +1,12 @@
+/*@import './../../../client/styles/structure';*/
+
+:root {
+  --mainColor: rebeccapurple;
+}
+
+.greeting {
+  background: var(--mainColor);
+  span { padding : 25 px;
+  display: flex;
+}
+}

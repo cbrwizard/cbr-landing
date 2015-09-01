@@ -36,7 +36,7 @@ const renderToMarkup = (alt, routes, state, url) => {
 
   Router.run(routes, url, (Handler) => {
     alt.bootstrap(state);
-    let content = React.renderToString(React.createElement(Handler));
+    const content = React.renderToString(React.createElement(Handler));
     markup = Iso.render(content, alt.flush());
   });
   return markup;
@@ -68,7 +68,7 @@ export default function UniversalRenderer(alt, routes, html) {
     render = Iso.bootstrap((state, _, container) => {
       alt.bootstrap(state);
       Router.run(routes, Router.HistoryLocation, (Handler) => {
-        let node = React.createElement(Handler);
+        const node = React.createElement(Handler);
         React.render(node, container);
       });
     });

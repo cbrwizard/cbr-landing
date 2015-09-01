@@ -9,5 +9,5 @@ export default class Text extends React.Component {
 }
 
 Text.propTypes = {
-  text: React.PropTypes.string
+  text: React.PropTypes.string,
 };
