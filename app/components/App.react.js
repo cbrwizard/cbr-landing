@@ -1,9 +1,16 @@
 import React from 'react';
 import { RouteHandler } from 'react-router';
 
+//import ReactIntl from 'react-intl';
+//import reactMixin from 'react-mixin';
+
+//const IntlMixin = ReactIntl.IntlMixin;
+//const FormattedMessage = ReactIntl.FormattedMessage;
+
 import 'scss/main';
 
-export default class App extends React.Component {
+//@reactMixin.decorate(IntlMixin)
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -12,3 +19,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default App;
